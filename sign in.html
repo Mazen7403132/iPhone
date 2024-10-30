@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Google Accounts</title>
+    <style>
+        /* Styling remains the same */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+        .signin-container {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .signin-container img {
+            width: 70px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #202124;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .signin-btn {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .signin-btn:hover {
+            background-color: #1558b0;
+        }
+        .link {
+            display: block;
+            margin-top: 10px;
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="signin-container">
+        <img src="Apple-Logo.png" alt="Apple Logo">
+        <h2>Sign in</h2>
+        <input type="email" id="email" class="input-field" placeholder="Email or phone" required>
+        <input type="password" id="password" class="input-field" placeholder="Enter your password" required>
+         <a href="https://www.amazon.com/ap/signin?_encoding=UTF8&openid.assoc_handle=amazon_checkout_us&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fcheckoutportal%2Fenter-checkout.html%3Fie%3DUTF8%26asin%3DB0CHJTWHKQ%26buyNow%3D1%26cartCustomerID%3D0%26fromSignIn%3D1%26isGift%3D0%26offeringID%3DbNDRZycybTLpTocrt3DJcTq9eWKxdfSyNr5nbnOOBOpqixADSv%25252F9XEvsjPYNATdIVhftGcLQhmJsvkqRlb%25252BhEAzimZklfml6N957RP34Oh6l69vWvRLZ7T2S3%25252Fagx1nxYAkw93Yua1YFL9zBP%25252F4wSCPS1TXSjqxe9%25252BT9LJMwq6%25252BKCXWxayOfXXY6U4pmUWgh%26purchaseInputs%3DHASH%25280x7fe8f7977560%2529%26quantity%3D1%26sessionID%3D133-3942732-9869007&pageId=amazon_checkout_us&showRmrMe=0&siteState=IMBMsgs.&suppressSignInRadioButtons=0"><button class="signin-btn" onclick="validateForm()">Next</button></a>
+        <div id="error" class="error-message"></div>
+        <a href="#" class="link">Forgot email?</a>
+        <a href="#" class="link">Create account</a>
+    </div>
+
+    <script>
+        function validateForm() {
+            // Get input values
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error");
+
+            // Clear previous error message
+            errorMessage.textContent = "";
+
+            // Simple validation
+            if (!email) {
+                errorMessage.textContent = "Please enter your email or phone.";
+                return;
+            }
+            if (!password) {
+                errorMessage.textContent = "Please enter your password.";
+                return;
+            }
+
+            // If both fields are filled, simulate sign-in success
+            alert("Sign-in successful!");
+        }
+    </script>
+</body>
+</html>

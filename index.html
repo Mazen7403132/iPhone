@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    
+    <style> /* Header Styling */
+        header {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 24px;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        ul{
+    background-color: blue;
+  }
+
+  ul li{
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    height: 40px;
+  }
+
+  ul li a{
+    color: blue;
+    text-decoration: none;
+   font-size: 32px;
+  }
+
+  ul li:hover{
+    background-color: black;
+  }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Apple-Logo.png" width="75">
+                <div class="logo">
+            <h1>My IPhone app </h1>
+
+        </div>
+
+        <nav>
+            
+            <ul>
+                <li><a href="sign at.html">Home</a></li>
+                <li><a href="https://www.apple.com/">Apple</a></li>
+                <li><a href="https://www.amazon.com/?tag=hymsabk-20&ref=pd_sl_6gwjrxu9p1_e&adgrpid=1341405838299434&hvadid=83838130693496&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=146223&hvtargid=kwd-83838874655187:loc-187&hydadcr=28884_14580403&msclkid=3c605a42a4ae169eb7c53d60948334e8">Amazon</a></li>
+                <li><a href="https://www.jumia.com.ng/">Jumia</a></li>
+
+
+
+            </ul>
+        </nav>
+    </header>
+
+    
+        
+        
+
+        
+                
+  
+    
+    <main>
+        <section id="products">
+            <div class="product">
+                <img src="6525424_sd.avif" width="300">
+                <h2>Iphone 15 pro max</h2>
+                <p>Price:EGB 63,750</p>
+                <button onclick="addToCart(63,750)">Add to Cart</button>
+                <br> <br> 
+                <a href="sign in.html"><button onclick="addToCart(10)">Buy now</button></a>
+            </div>
+            <div class="product">
+                <img src="6443398_sd.avif" width="300">
+                <h2>Iphone 11 </h2>
+                <p>Price:EGP 56,000  </p>
+                <button onclick="addToCart(56)">Add to Cart</button>
+                <br> <br> 
+                <a href="sign in.html"><button onclick="ContentVisibilityAutoStateChangeEvent(15)">Buy now</button></a>
+
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Shopping Cart</h2>
+            <p>Total: EGB=<span id="total">0</span></p>
+        </section>
+    </main>
+    <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>FOOTER</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Powered by Mazen ahmed moussa</p>
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">
+            <img src="https://www.w3schools.com/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="https://www.w3schools.com/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li> 
+        </ul>
+      </div>
+  
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
+        </p>
+      </div>
+  
+    </div>
+    </footer>
+    <div class="w3-black w3-center w3-padding-24">Made with (Mazen Ahmed Moussa)</div>
+
+    <!-- End page content -->
+    </div>
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+         
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+        </script>
+    <script src="app.js"></script>
+    <script src="ap.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>
